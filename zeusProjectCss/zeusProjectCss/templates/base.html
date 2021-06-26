@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+{% load static %}
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discover on SoundCloud</title>
+    <link rel="stylesheet" href="{% static 'css/base.css' %}" type="text/css">
+    <link rel="icon" href="{% static 'images/favicon.ico' %}" type="image/x-icon">
+</head>
+<body>
+    <div id="app">
+        <header>
+            <div class="nav-container">
+                <div class="item-container">
+                    <div class="nav-left-container">
+                        <div class="logo left">
+                            <a href="/" title="Home" class="logo_icon"></a>
+                            <a href="/" title="Home" class="logo_wordmark"></a>
+                        </div>
+                        <div class="nav-left-wrapper">
+                            <ul>
+                                <li>
+                                    <a href="/">Home</a>
+                                </li>
+                                <li>
+                                    <a href="/">Stream</a>
+                                </li>
+                                <li>
+                                    <a href="/">Library</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="nav-middle-container">
+                        <div class="nav-search"></div>
+                    </div>
+                    <div class="nav-right-container">
+                        <div class="nav-right-wrapper">
+                            <div class="nav-loginMenu left">
+                                <button title="Sign in" class="sign_in">Sign in</button>
+                                <button title="Create account" class="creat_account">Create account</button>
+                            </div>
+                            <div class="nav-upload left">
+                                <a href="/">Upload</a>
+                            </div>
+                            <ul>
+                                <li></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        {% block content %}
+        {% endblock %}
+    </div>
+</body>
+</html>
