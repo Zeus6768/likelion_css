@@ -21,14 +21,6 @@ header {
     font-weight: 100;
 }
 
-ul {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    list-style: none;
-}
-
-
 a {
     text-decoration: none;
 }
@@ -51,6 +43,13 @@ nav {
     background: linear-gradient(#f70, #f30);
     width: 184px;
     height: 46px;
+}
+
+.nav-list-left {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
 }
 
 .nav-list-item {
@@ -103,6 +102,17 @@ nav {
     color: #999;
 }
 
+.search_input:focus {
+    background-color: #fff;
+}
+
+.search_input::-webkit-search-decoration,
+.search_input::-webkit-search-cancel-button,
+.search_input::-webkit-search-results-button,
+.search_input::-webkit-search-results-decoration{
+	display:none;
+}
+
 .search_submit {
     position: absolute;
     top: 15px;
@@ -153,6 +163,84 @@ nav {
     margin: 0;
     color: #ccc;
     line-height: 1.5;
+}
+
+.dropdown {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.dropbtn {
+    color: #666;
+    background-color: transparent;
+    padding: 12px 0;
+    width: 46px;
+    height: 46px;
+    border: 0;
+    cursor: pointer;
+}
+
+.dropdown-content {
+    display: none;
+    position: fixed;
+    top: 46.01px;
+    left: 1201.6px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-top: 0;
+    border-radius: 0;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+    min-width: 170px;
+    z-index: 1;
+}
+
+.dropdown-content ul {
+    list-style: none;
+    border-bottom: 1px solid #f2f2f2;
+}
+
+.dropdown-content a {
+    color: #333;
+    padding: 8px 10px;
+    text-decoration: none;
+    display: block;
+    cursor: pointer;
+    font-size: 12px;
+}
+
+.dropdown-content a:hover {
+    background-color: #f2f2f2;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: #111;
+}
+
+/* discover.html */
+
+.main {
+    padding: 46px 30px;
+    width: 1180px;
+    height: 700px;
+    margin: 0 auto;
+}
+
+.main_content {
+    padding: 30px 30px 0 0;
+    margin: 0 330px 0 0;
+    border-right: 1px solid #f2f2f2;
+}
+
+.main_content ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
 }
 
 /* 모바일용 */

@@ -21,7 +21,7 @@
                         <img src="../static/images/wordmark.png" alt="">
                     </div>
                 </a>
-                <ul>
+                <ul class="nav-list-left">
                     <li class="nav-list-item home">
                         <a class="home" href="/">Home</a>
                     </li>
@@ -47,8 +47,40 @@
                 <div class="nav-upload">
                     <a href="" class="upload">Upload</a>
                 </div>
+                <div class="dropdown">
+                    <button class="dropbtn"><img src="../static/images/more.svg" alt=""></button>
+                    <div class="dropdown-content">
+                        <ul>
+                            <li>
+                                <a href="">About us</a>
+                                <a href="">Legal</a>
+                                <a href="">Copyright</a>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                                <a href="">Mobile apps</a>
+                                <a href="">For Creators</a>
+                                <a href="">Blog</a>
+                                <a href="">Jobs</a>
+                                <a href="">Developers</a>                                
+                            </li>
+                        </ul>
+                        <ul>  
+                            <a href="">Support</a>
+                            <a href="">Keyboard shortcuts</a>
+                        </ul>
+                        <ul>
+                            <li>
+                                <a href="">Pro plans</a>
+                            </li>
+                        </ul>                        
+                    </div>
+                </div>
             </div>
         </nav>
     </header>
+    {% block content %}
+    {% endblock %}
 </body>
 </html>
