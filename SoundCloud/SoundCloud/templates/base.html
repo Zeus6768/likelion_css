@@ -8,7 +8,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Discover on SoundCloud</title>
-    <link rel="shortcut icon" href="../static/images/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="{% static 'imgaes/favicon.ico' %}" type="image/x-icon">
     <link rel="stylesheet" href="{% static 'css/base.css' %}" type="text/css">
 </head>
 <body>
@@ -17,8 +17,8 @@
             <div class="nav-container left">
                 <a href="/">
                     <div class="nav-logo">
-                        <img src="../static/images/logo.png" alt="">
-                        <img src="../static/images/wordmark.png" alt="">
+                        <img src="{% static 'images/logo.png' %}" alt="">
+                        <img src="{% static 'images/wordmark.png' %}" alt="">
                     </div>
                 </a>
                 <ul class="nav-list-left">
@@ -48,7 +48,7 @@
                     <a href="" class="upload">Upload</a>
                 </div>
                 <div class="dropdown">
-                    <button class="dropbtn"><img src="../static/images/more.svg" alt=""></button>
+                    <button class="dropbtn"><img src="{% static 'images/more.svg' %}" alt=""></button>
                     <div class="dropdown-content">
                         <ul>
                             <li>

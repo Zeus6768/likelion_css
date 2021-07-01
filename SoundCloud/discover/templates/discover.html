@@ -1,20 +1,487 @@
 {% extends "base.html" %}
 {% block content %}
-<div class="main">
-    <div class="main_content">
-        <ul>
-            <li class="main_item">
-                div.
-            </li>
-            <li class="main_item"></li>
-            <li class="main_item"></li>
-            <li class="main_item"></li>
-            <li class="main_item"></li>
-            <li class="main_item"></li>
-            <li class="main_item"></li>
-        </ul>
+{% load static %}
+<div class="container">
+    <div class="main">
+        <div class="main_content">
+            <ul>
+                <li class="main_item_list" index="0">
+                    <div class="main_item">
+                        <div class="item_title">
+                            <h2 class=titleText>Charts: Top 50</h2>
+                            <p class="titleDetail">The most played tracks on SoundCloud this week</p>
+                        </div>
+                        <div class="item_gallery">
+                            <div class="itemTile" index="0">
+                                <div class="itemTile_artwork">
+                                    <img src="{% static 'images/top50/artwork1.jpg' %}" alt="artwork">
+                                </div>
+                                <div class="itemTile_description">
+                                    <a href="" class="itemTile_description_text1">All music genres</a>
+                                    <div class="itemTile_description_text2">Top 50</div>
+                                </div>
+                            </div>
+                            <div class="itemTile" index="1">
+                                <div class="itemTile_artwork">
+                                    <img src="{% static 'images/top50/artwork1.jpg' %}" alt="artwork">
+                                </div>
+                                <div class="itemTile_description">
+                                    <a href="" class="itemTile_description_text1">Global Beats</a>
+                                    <div class="itemTile_description_text2">Top 50</div>
+                                </div>
+                            </div>
+                            <div class="itemTile" index="2">
+                                <div class="itemTile_artwork">
+                                    <img src="{% static 'images/top50/artwork2.jpg' %}" alt="artwork">
+                                </div>
+                                <div class="itemTile_description">
+                                    <a href="" class="itemTile_description_text1">Hip-Hop & Rap</a>
+                                    <div class="itemTile_description_text2">Top 50</div>
+                                </div>
+                            </div>
+                            <div class="itemTile" index="3">
+                                <div class="itemTile_artwork">
+                                    <img src="{% static 'images/top50/artwork3.jpg' %}" alt="artwork">
+                                </div>
+                                <div class="itemTile_description">
+                                    <a href="" class="itemTile_description_text1">Pop</a>
+                                    <div class="itemTile_description_text2">Top 50</div>
+                                </div>
+                            </div>
+                            <div class="itemTile" index="4">
+                                <div class="itemTile_artwork">
+                                    <img src="{% static 'images/top50/artwork4.jpg' %}" alt="artwork">
+                                </div>
+                                <div class="itemTile_description">
+                                    <a href="" class="itemTile_description_text1">House</a>
+                                    <div class="itemTile_description_text2">Top 50</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="main_item_list" index="1">
+                    <div class="main_item">
+                        <div class="item_title">
+                            <h2 class=titleText>Charts: New & hot</h2>
+                            <p class="titleDetail">Up-and-coming tracks on SoundCloud</p>
+                        </div>
+                        <div class="item_gallery">
+                            <div class="itemTile" index="0">
+                                <div class="itemTile_artwork">
+                                    <img src="{% static 'images/new hot/artwork1.jpg' %}" alt="artwork">
+                                </div>
+                                <div class="itemTile_description">
+                                    <a href="" class="itemTile_description_text1">All music genres</a>
+                                    <div class="itemTile_description_text2">New & hot</div>
+                                </div>
+                            </div>
+                            <div class="itemTile" index="1">
+                                <div class="itemTile_artwork">
+                                    <img src="{% static 'images/new hot/artwork2.jpg' %}" alt="artwork">
+                                </div>
+                                <div class="itemTile_description">
+                                    <a href="" class="itemTile_description_text1">Global Beats</a>
+                                    <div class="itemTile_description_text2">New & hot</div>
+                                </div>
+                            </div>
+                            <div class="itemTile" index="2">
+                                <div class="itemTile_artwork">
+                                    <img src="{% static 'images/new hot/artwork1.jpg' %}" alt="artwork">
+                                </div>
+                                <div class="itemTile_description">
+                                    <a href="" class="itemTile_description_text1">Hip-hop & Rap</a>
+                                    <div class="itemTile_description_text2">New & hot</div>
+                                </div>
+                            </div>
+                            <div class="itemTile" index="3">
+                                <div class="itemTile_artwork">
+                                    <img src="{% static 'images/new hot/artwork3.jpg' %}" alt="artwork">
+                                </div>
+                                <div class="itemTile_description">
+                                    <a href="" class="itemTile_description_text1">Pop</a>
+                                    <div class="itemTile_description_text2">New & hot</div>
+                                </div>
+                            </div>
+                            <div class="itemTile" index="4">
+                                <div class="itemTile_artwork">
+                                    <img src="{% static 'images/new hot/artwork4.jpg' %}" alt="artwork">
+                                </div>
+                                <div class="itemTile_description">
+                                    <a href="" class="itemTile_description_text1">House</a>
+                                    <div class="itemTile_description_text2">New & hot</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="main_item_list" index="2">
+                    <div class="main_item">
+                        <div class="item_title">
+                            <h2 class=titleText>Study</h2>
+                            <p class="titleDetail">Popular playlists from the SoundCloud community</p>
+                        </div>
+                        <div class="item_gallery">
+                            <div class="itemTile" index="0">
+                                <div class="itemTile_artwork">
+                                    <img src="{% static 'images/study/artwork1.jpg' %}" alt="artwork">
+                                </div>
+                                <div class="itemTile_description">
+                                    <a href="" class="itemTile_description_text1">Read more, Write more</a>
+                                    <div class="itemTile_description_text2">Ulana</div>
+                                </div>
+                            </div>
+                            <div class="itemTile" index="1">
+                                <div class="itemTile_artwork">
+                                    <img src="{% static 'images/study/artwork2.jpg' %}" alt="artwork">
+                                </div>
+                                <div class="itemTile_description">
+                                    <a href="" class="itemTile_description_text1">Piano Deep Concentration</a>
+                                    <div class="itemTile_description_text2">Nitza Md</div>
+                                </div>
+                            </div>
+                            <div class="itemTile" index="2">
+                                <div class="itemTile_artwork">
+                                    <img src="{% static 'images/study/artwork3.jpg' %}" alt="artwork">
+                                </div>
+                                <div class="itemTile_description">
+                                    <a href="" class="itemTile_description_text1">lofi 4 studying</a>
+                                    <div class="itemTile_description_text2">suri</div>
+                                </div>
+                            </div>
+                            <div class="itemTile" index="3">
+                                <div class="itemTile_artwork">
+                                    <img src="{% static 'images/study/artwork4.jpg' %}" alt="artwork">
+                                </div>
+                                <div class="itemTile_description">
+                                    <a href="" class="itemTile_description_text1">Jazz hip 4</a>
+                                    <div class="itemTile_description_text2">soo</div>
+                                </div>
+                            </div>
+                            <div class="itemTile" index="4">
+                                <div class="itemTile_artwork">
+                                    <img src="{% static 'images/study/artwork5.jpg' %}" alt="artwork">
+                                </div>
+                                <div class="itemTile_description">
+                                    <a href="" class="itemTile_description_text1">Stella's Coffee House</a>
+                                    <div class="itemTile_description_text2">Mah</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="main_item_list" index="3">
+                    <div class="main_item">
+                        <div class="item_title">
+                            <h2 class=titleText>Party</h2>
+                            <p class="titleDetail">Popular playlists from the SoundCloud community</p>
+                        </div>
+                        <div class="item_gallery">
+                            <div class="itemTile" index="0">
+                                <div class="itemTile_artwork">
+                                    <img src="{% static 'images/party/artwork1.jpg' %}" alt="artwork">
+                                </div>
+                                <div class="itemTile_description">
+                                    <a href="" class="itemTile_description_text1">EDM remixes of popular s...</a>
+                                    <div class="itemTile_description_text2">Austin24heck</div>
+                                </div>
+                            </div>
+                            <div class="itemTile" index="1">
+                                <div class="itemTile_artwork">
+                                    <img src="{% static 'images/party/artwork2.jpg' %}" alt="artwork">
+                                </div>
+                                <div class="itemTile_description">
+                                    <a href="" class="itemTile_description_text1">T-4 Techno</a>
+                                    <div class="itemTile_description_text2">Westcoast Radio (EDM)</div>
+                                </div>
+                            </div>
+                            <div class="itemTile" index="2">
+                                <div class="itemTile_artwork">
+                                    <img src="{% static 'images/party/artwork3.jpg' %}" alt="artwork">
+                                </div>
+                                <div class="itemTile_description">
+                                    <a href="" class="itemTile_description_text1">Best of House Music (Vol...</a>
+                                    <div class="itemTile_description_text2">Westcoast Radio (EDM)</div>
+                                </div>
+                            </div>
+                            <div class="itemTile" index="3">
+                                <div class="itemTile_artwork">
+                                    <img src="{% static 'images/party/artwork4.jpg' %}" alt="artwork">
+                                </div>
+                                <div class="itemTile_description">
+                                    <a href="" class="itemTile_description_text1">Best of Deep House (Vol...</a>
+                                    <div class="itemTile_description_text2">Westcoast Radio (EDM)</div>
+                                </div>
+                            </div>
+                            <div class="itemTile" index="4">
+                                <div class="itemTile_artwork">
+                                    <img src="{% static 'images/party/artwork5.jpg' %}" alt="artwork">
+                                </div>
+                                <div class="itemTile_description">
+                                    <a href="" class="itemTile_description_text1">Summer 2k17</a>
+                                    <div class="itemTile_description_text2">lilly manning</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="main_item_list" index="4">
+                    <div class="main_item">
+                        <div class="item_title">
+                            <h2 class=titleText>Chill</h2>
+                            <p class="titleDetail">Popular playlists from the SoundCloud community</p>
+                        </div>
+                        <div class="item_gallery">
+                            <div class="itemTile" index="0">
+                                <div class="itemTile_artwork">
+                                    <img src="{% static 'images/chill/artwork1.jpg' %}" alt="artwork">
+                                </div>
+                                <div class="itemTile_description">
+                                    <a href="" class="itemTile_description_text1">jazzhip</a>
+                                    <div class="itemTile_description_text2">soo</div>
+                                </div>
+                            </div>
+                            <div class="itemTile" index="1">
+                                <div class="itemTile_artwork">
+                                    <img src="{% static 'images/chill/artwork2.jpg' %}" alt="artwork">
+                                </div>
+                                <div class="itemTile_description">
+                                    <a href="" class="itemTile_description_text1">Emotive 10 (chilled)</a>
+                                    <div class="itemTile_description_text2">Ric</div>
+                                </div>
+                            </div>
+                            <div class="itemTile" index="2">
+                                <div class="itemTile_artwork">
+                                    <img src="{% static 'images/chill/artwork3.jpg' %}" alt="artwork">
+                                </div>
+                                <div class="itemTile_description">
+                                    <a href="" class="itemTile_description_text1">Never Chill Before</a>
+                                    <div class="itemTile_description_text2">Pineapple Express.</div>
+                                </div>
+                            </div>
+                            <div class="itemTile" index="3">
+                                <div class="itemTile_artwork">
+                                    <img src="{% static 'images/chill/artwork4.jpg' %}" alt="artwork">
+                                </div>
+                                <div class="itemTile_description">
+                                    <a href="" class="itemTile_description_text1">Morning Chillout</a>
+                                    <div class="itemTile_description_text2">Mighty</div>
+                                </div>
+                            </div>
+                            <div class="itemTile" index="4">
+                                <div class="itemTile_artwork">
+                                    <img src="{% static 'images/chill/artwork5.jpg' %}" alt="artwork">
+                                </div>
+                                <div class="itemTile_description">
+                                    <a href="" class="itemTile_description_text1">musicas relaxantes</a>
+                                    <div class="itemTile_description_text2">lihcogine</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="main_item_list" index="5">
+                    <div class="main_item">
+                        <div class="item_title">
+                            <h2 class=titleText>Relax</h2>
+                            <p class="titleDetail">The most played tracks on SoundCloud this week</p>
+                        </div>
+                        <div class="item_gallery">
+                            <div class="itemTile" index="0">
+                                <div class="itemTile_artwork">
+                                    <img src="{% static 'images/relax/artwork1.jpg' %}" alt="artwork">
+                                </div>
+                                <div class="itemTile_description">
+                                    <a href="" class="itemTile_description_text1">chilling</a>
+                                    <div class="itemTile_description_text2">2Q.</div>
+                                </div>
+                            </div>
+                            <div class="itemTile" index="1">
+                                <div class="itemTile_artwork">
+                                    <img src="{% static 'images/relax/artwork2.jpg' %}" alt="artwork">
+                                </div>
+                                <div class="itemTile_description">
+                                    <a href="" class="itemTile_description_text1">Morning Chillout</a>
+                                    <div class="itemTile_description_text2">Mighty</div>
+                                </div>
+                            </div>
+                            <div class="itemTile" index="2">
+                                <div class="itemTile_artwork">
+                                    <img src="{% static 'images/relax/artwork3.jpg' %}" alt="artwork">
+                                </div>
+                                <div class="itemTile_description">
+                                    <a href="" class="itemTile_description_text1">jazzhip 7</a>
+                                    <div class="itemTile_description_text2">soo</div>
+                                </div>
+                            </div>
+                            <div class="itemTile" index="3">
+                                <div class="itemTile_artwork">
+                                    <img src="{% static 'images/relax/artwork4.jpg' %}" alt="artwork">
+                                </div>
+                                <div class="itemTile_description">
+                                    <a href="" class="itemTile_description_text1">meditation</a>
+                                    <div class="itemTile_description_text2">Rehan Khan 55</div>
+                                </div>
+                            </div>
+                            <div class="itemTile" index="4">
+                                <div class="itemTile_artwork">
+                                    <img src="{% static 'images/relax/artwork5.jpg' %}" alt="artwork">
+                                </div>
+                                <div class="itemTile_description">
+                                    <a href="" class="itemTile_description_text1">Relax '♡'</a>
+                                    <div class="itemTile_description_text2">ReHàß ♪♪</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="main_item_list" index="6">
+                    <div class="main_item">
+                        <div class="item_title">
+                            <h2 class=titleText>Sleep</h2>
+                            <p class="titleDetail">Popular playlists from the SoundCloud community</p>
+                        </div>
+                        <div class="item_gallery">
+                            <div class="itemTile" index="0">
+                                <div class="itemTile_artwork">
+                                    <img src="{% static 'images/sleep/artwork1.jpg' %}" alt="artwork">
+                                </div>
+                                <div class="itemTile_description">
+                                    <a href="" class="itemTile_description_text1">lofi/sleep</a>
+                                    <div class="itemTile_description_text2">repaintable · 2019</div>
+                                </div>
+                            </div>
+                            <div class="itemTile" index="1">
+                                <div class="itemTile_artwork">
+                                    <img src="{% static 'images/sleep/artwork2.jpg' %}" alt="artwork">
+                                </div>
+                                <div class="itemTile_description">
+                                    <a href="" class="itemTile_description_text1">Relax '♡'</a>
+                                    <div class="itemTile_description_text2">ReHàß ♪♪</div>
+                                </div>
+                            </div>
+                            <div class="itemTile" index="2">
+                                <div class="itemTile_artwork">
+                                    <img src="{% static 'images/sleep/artwork3.jpg' %}" alt="artwork">
+                                </div>
+                                <div class="itemTile_description">
+                                    <a href="" class="itemTile_description_text1">Summer Nights</a>
+                                    <div class="itemTile_description_text2">Serene</div>
+                                </div>
+                            </div>
+                            <div class="itemTile" index="3">
+                                <div class="itemTile_artwork">
+                                    <img src="{% static 'images/sleep/artwork4.jpg' %}" alt="artwork">
+                                </div>
+                                <div class="itemTile_description">
+                                    <a href="" class="itemTile_description_text1">Sleep healing sounds</a>
+                                    <div class="itemTile_description_text2">Jean Claude 5</div>
+                                </div>
+                            </div>
+                            <div class="itemTile" index="4">
+                                <div class="itemTile_artwork">
+                                    <img src="{% static 'images/sleep/artwork5.jpg' %}" alt="artwork">
+                                </div>
+                                <div class="itemTile_description">
+                                    <a href="" class="itemTile_description_text1">Billies Sleep Sounds</a>
+                                    <div class="itemTile_description_text2">Billie Kihega</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="main_item_list" index="7">
+                    <div class="main_item">
+                        <div class="item_title">
+                            <h2 class=titleText>Workout</h2>
+                            <p class="titleDetail">Popular playlists from the SoundCloud community</p>
+                        </div>
+                        <div class="item_gallery">
+                            <div class="itemTile" index="0">
+                                <div class="itemTile_artwork">
+                                    <img src="{% static 'images/workout/artwork1.jpg' %}" alt="artwork">
+                                </div>
+                                <div class="itemTile_description">
+                                    <a href="" class="itemTile_description_text1">T-4 Techno</a>
+                                    <div class="itemTile_description_text2">Westcoast Radio (EDM)</div>
+                                </div>
+                            </div>
+                            <div class="itemTile" index="1">
+                                <div class="itemTile_artwork">
+                                    <img src="{% static 'images/workout/artwork2.jpg' %}" alt="artwork">
+                                </div>
+                                <div class="itemTile_description">
+                                    <a href="" class="itemTile_description_text1">#Workout #Electronic</a>
+                                    <div class="itemTile_description_text2">Tere Mancha</div>
+                                </div>
+                            </div>
+                            <div class="itemTile" index="2">
+                                <div class="itemTile_artwork">
+                                    <img src="{% static 'images/workout/artwork3.jpg' %}" alt="artwork">
+                                </div>
+                                <div class="itemTile_description">
+                                    <a href="" class="itemTile_description_text1">pre work out 2017</a>
+                                    <div class="itemTile_description_text2">user154907890</div>
+                                </div>
+                            </div>
+                            <div class="itemTile" index="3">
+                                <div class="itemTile_artwork">
+                                    <img src="{% static 'images/workout/artwork4.jpg' %}" alt="artwork">
+                                </div>
+                                <div class="itemTile_description">
+                                    <a href="" class="itemTile_description_text1">Best of Deep House (Vol...</a>
+                                    <div class="itemTile_description_text2">Westcoast Radio (EDM)</div>
+                                </div>
+                            </div>
+                            <div class="itemTile" index="4">
+                                <div class="itemTile_artwork">
+                                    <img src="{% static 'images/workout/artwork5.jpg' %}" alt="artwork">
+                                </div>
+                                <div class="itemTile_description">
+                                    <a href="" class="itemTile_description_text1">Best Progressive House (...</a>
+                                    <div class="itemTile_description_text2">Westcoast Radio (EDM)</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="sidebar">
+            <article>
+                <div class="sidebar_header">
+                    <h3>Go mobile</h3>
+                </div>
+                <div class="sidebar_content">
+                    <img src="{% static 'images/appstore.png' %}" alt="">
+                    <img src="{% static 'images/playstore.png' %}" alt="">
+                </div>
+                <div class="sidebar_footer">
+                    <a href="">Legal</a>
+                    - 
+                    <a href="">Privacy</a>
+                    - 
+                    <a href="">Cookie Policy</a>
+                    - 
+                    <a href="">Cookie Manager</a>
+                    - 
+                    <a href="">Imprint</a>
+                    - 
+                    <a href="">Creator Resources</a>
+                    - 
+                    <a href="">Blog</a>
+                    - 
+                    <a href="">Charts</a>
+                    - 
+                    <div class="footer_language">
+                        <a href="">
+                            Language: 
+                            <span>English (US)</span>
+                        </a>
+                    </div>
+                </div>
+            </article>
+        </div>
     </div>
 </div>
 {% endblock %}
-
-diverse
